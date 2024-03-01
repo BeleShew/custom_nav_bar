@@ -14,10 +14,7 @@ class WebSocketPage extends StatefulWidget {
 }
 
 class _WebSocketPageState extends State<WebSocketPage> {
-  // final  webSocketUrl = IOWebSocketChannel.connect(Uri.parse('wss://gotify.chegebeya.kifiya.et/stream:80',), headers: {
-  //     'token': 'Avu8S9uGyRcA2Oa'
-  //   });
-  // final  webSocketUrl = IOWebSocketChannel.connect(Uri.parse('wss://fstream.binance.com/ws/bnbusdt@aggTrade'));
+  final  webSocketUrl = IOWebSocketChannel.connect(Uri.parse('wss://fstream.binance.com/ws/bnbusdt@aggTrade'));
   String tempText="0";
   String title="Binance";
   List<BinanceResponse> binanceList=[];
@@ -29,9 +26,7 @@ class _WebSocketPageState extends State<WebSocketPage> {
   }
   intn()async{
     //region Socket
-    String auth = base64Encode(utf8.encode('chegebeya:tLDcubrY3fH6cKjq'));
-    var headers = {'Authorization': 'Basic $auth'};
-    final  webSocketUrl = IOWebSocketChannel.connect(Uri.parse('wss://gotify.chegebeya.kifiya.et/stream',), headers:headers);
+
     webSocketUrl.stream.listen((event) {
       if (!mounted) return;
       if (kDebugMode) {
