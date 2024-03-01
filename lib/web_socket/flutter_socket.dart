@@ -140,59 +140,7 @@ class _WebSocketPageState extends State<WebSocketPage> {
             },
           );
         },
-      )
-      // ListView.builder(itemBuilder: (context,index){
-          // return Padding(
-          //   padding: const EdgeInsets.all(8.0),
-          //   child: Card(
-          //     child: Padding(
-          //       padding: const EdgeInsets.all(8.0),
-          //       child: Column(
-          //         mainAxisSize: MainAxisSize.min,
-          //         crossAxisAlignment: CrossAxisAlignment.stretch,
-          //         children: [
-          //           Row(
-          //             mainAxisSize: MainAxisSize.min,
-          //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //             children: [
-          //               Text("Price : ${binanceList[index].p??""}"),
-          //               Text("Quantity : ${binanceList[index].q??""}"),
-          //             ],
-          //           ),
-          //           const Divider(),
-          //           Row(
-          //             mainAxisSize: MainAxisSize.min,
-          //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //             children: [
-          //               Text(" First trade ID : ${binanceList[index].f??""}"),
-          //               Text(" Aggregate trade ID : ${binanceList[index].a??""}"),
-          //             ],
-          //           ),
-          //           const Divider(),
-          //           Row(
-          //             mainAxisSize: MainAxisSize.min,
-          //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //             children: [
-          //               Text(" Trade time : ${binanceList[index].l??""}"),
-          //               Text("Event time : ${binanceList[index].e??""}"),
-          //             ],
-          //           ),
-          //           const Divider(),
-          //           Row(
-          //             mainAxisSize: MainAxisSize.min,
-          //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //             children: [
-          //               Text(" Is the buyer the market maker? : ${binanceList[index].m??""}"),
-          //               Text("Symbol : ${binanceList[index].s??""}"),
-          //             ],
-          //           ),
-          //         ],
-          //       ),
-          //     ),
-          //   ),
-          // );
-          // })
-      ,
+      ),
     );
   }
 }
