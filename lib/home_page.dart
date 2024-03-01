@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:custom_nav_bar/pdf/view_pdf_page.dart';
 import 'package:custom_nav_bar/web_socket/flutter_socket.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_table/table_sticky_headers.dart';
@@ -140,9 +141,14 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                 width: 54,
                 child: FloatingActionButton(onPressed: (){
 
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(builder: (context) => const WebSocketPage()),
+                  // );
+
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const WebSocketPage()),
+                    MaterialPageRoute(builder: (context) => const ViewPdfPage()),
                   );
                 },
                   backgroundColor: Colors.white,
